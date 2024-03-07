@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chatbot UPDS</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-R5P+UW/vWoyxjpWHU2JfxT81q1zHe4aZGOe57XGf3oCMvaKcV2R5X/zAv2tPGoB8uSppMTp7k0XBWO+aZuFN2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-dTlHeW4W6ljiBwMeeVfb9zT5U5bJ3uv8nyAweXplkb6TwmT+upTUp3J6lfuL0qmSsfBxJgM7NZwePME5e2cI1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="script.js" defer></script>
+  <style>
+    /* Estilos para la ventana emergente */
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="notification-container">
+      <button class="chatbot-toggler" onclick="openModal()">
+        <span class="notification"><i class="fas fa-robot"></i> ¿Necesitas ayuda?</span>
+
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+
+    <!-- Ventana emergente (modal) -->
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <center><img src="logo2.png" alt="Logo de la universidad"></center>
+        <span class="material-symbols-outlined"></span>
+        <h4 id="animated-text">
+        
+          ¡Hola a todos!<br>
+          Bienvenidos a la experiencia interactiva de la Universidad Privada Domingo Savio (UPDS). Soy su asistente virtual, listo para guiarlos a través de cualquier pregunta o curiosidad que tengan sobre nuestra maravillosa institución.
+          <br>
+          ¡Descubran todo lo que nuestra universidad tiene para ofrecer y exploren juntos este emocionante viaje académico!
+          <br><br>
+          Además, más abajo encontrarán algunas preguntas frecuentes que les ayudarán a comprender mejor cómo funciona la UPDS. ¡Estoy aquí para responderlas!
+        </h4>
+        <ul class="modali" id="faq-list">
+          <li>¿costo mensualidad en upds sed_suc?</li>
+          <li>¿materias ofertadas en la upds sed_suc?</li>
+          <li>¿no tengo acceso a la plataforma Moodle en la upds sed_suc?</li>
+          <li>¿perdí mi celular y no puedo ingresar a mi cuenta académica en la upds sed_suc?</li>
+          <li>¿cuentan con la carrera de Derecho en la upds sed_suc?</li>
+          <li>¿con qué carreras cuentan en la upds sed_suc?</li>
+          <li>¿puedo inscribirme en cualquier mes del año en la upds sed_suc?</li>
+          <li>¿cuánto debo pagar al momento de inscribirme?</li>
+          <li>¿cuánto debo pagar al momento de inscribirme en la upds sed_suc?</li>
+          <li>¿qué cubre el seguro universitario en la upds sed_suc?</li>
+          <li>¿qué hago si ya no hay cupos para programarme en la upds sed_suc?</li>
+          <li>¿qué necesito para obtener una beca en la upds sed_suc?</li>
+          <li>¿puedo cambiarme de turno si tengo beca en la upds sed_suc?</li>
+          <li>¿qué pasa si pierdo una materia en la upds sed_suc?</li>
+          <li>¿qué pasa si perdí mi carné universitario en la upds sed_suc?</li>
+          <li>¿qué pasa si esta materia no hay tantos alumnos y tengo beca en la upds sed_suc?</li>
+          <li>¿puedo programarme un día después del inicio de módulo en la upds sed_suc?</li>
+          <li>¿puedo faltar a clase en la upds sed_suc?</li>
+          <li>¿qué requisitos necesito para inscribirme en la upds sed_suc?</li>
+          <li>¿puedo hacer intercambio a otro país en la upds sed_suc?</li>
+          <li>¿cuantos descansos tiene un estudiante en la upds sed_suc?</li>   
+      </div>
+    </div>
+
+    <div class="chatbot">
+      <header>
+        <h2>Chatbot UPDS</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+
+      <!-- Agregado el icono de interrogación dentro del chat -->
+      <span class="question-mark" onclick="openModal()">?</span>
+
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hola soy en asistente chatbot de la UPDS 👋<br>¿En que puedo ayudarte hoy?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Escribe..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+  </div>
+  <script src="scri.js"></script>
+  <script>
+
+  </script>
+
+</body>
+
+</html>
